@@ -1,0 +1,19 @@
+{
+  "name": "IdiotForumCompleteIgnore",
+  "description": "アホ板の「無視リスト対象です。」を表示から排除する",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": {
+      "32": "logo.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://finance.yahoo.co.jp/cm/message/*"
+      ],
+      "js": ["ifci.js"]
+    }
+  ]
+}
